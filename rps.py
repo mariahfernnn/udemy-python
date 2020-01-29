@@ -25,6 +25,9 @@ print('No cheating!')
 # Ask Player 2 for move
 player_2 = input("Hey Player 2! Rock, Paper, Scissors?: ")
 
+# Another round of refactoring?
+# else statement: Any situation where player 2 wins
+
 # Refactored code
 if player_1 == player_2:
 	# If both players enter the same move
