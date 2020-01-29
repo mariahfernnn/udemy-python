@@ -27,6 +27,8 @@ player_2 = input("Hey Player 2! Rock, Paper, Scissors?: ")
 
 # Refactored code
 if player_1 == player_2:
+	# If both players enter the same move
+	# Also works if both players do not enter anything
 	print("It's a tie!")
 elif player_1 == 'rock':
 	if player_2 == 'paper':
@@ -45,6 +47,7 @@ elif player_1 == 'scissors':
 		print('player 1 wins')
 else:
 	# Empty string or string does not match conditions
+	# Does not print out if player 1 enters the right input but player 2 does not
 	print("Something went wrong")
 
 # # Conditional Logic
