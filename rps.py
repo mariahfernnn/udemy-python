@@ -41,4 +41,5 @@ elif player_1 == 'scissors' and player_2 == 'paper':
 elif player_1 == player_2:
 	print("It's a tie!")
 else:
+	# Empty string or string does not match conditions
 	print("Something went wrong")
