@@ -3,6 +3,9 @@
 # import module
 import random
 
+# or if you are just using randint: 
+# from random import randint
+
 # Ask Player 1 for move
 player_1 = input("Hey Player 1! Rock, Paper, Scissors?: ").lower()
 
