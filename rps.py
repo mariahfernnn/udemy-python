@@ -4,7 +4,7 @@
 import random
 
 # Ask Player 1 for move
-player_1 = input("Hey Player 1! Rock, Paper, Scissors?: ")
+player_1 = input("Hey Player 1! Rock, Paper, Scissors?: ").lower()
 
 # Play against the computer using randint
 num = random.randint(0, 2)
