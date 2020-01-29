@@ -26,7 +26,9 @@ print('No cheating!')
 player_2 = input("Hey Player 2! Rock, Paper, Scissors?: ")
 
 # Refactored code
-if player_1 == 'rock':
+if player_1 == player_2:
+	print("It's a tie!")
+elif player_1 == 'rock':
 	if player_2 == 'paper':
 		print('player 2 wins')
 	elif player_2 == 'scissors':
@@ -41,8 +43,6 @@ elif player_1 == 'scissors':
 		print('player 2 wins')
 	elif player_2 == 'paper':
 		print('player 1 wins')
-elif player_1 == player_2:
-	print("It's a tie!")
 else:
 	# Empty string or string does not match conditions
 	print("Something went wrong")
