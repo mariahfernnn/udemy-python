@@ -25,6 +25,7 @@ print('No cheating!')
 # Ask Player 2 for move
 player_2 = input("Hey Player 2! Rock, Paper, Scissors?: ")
 
+# Conditional Logic
 if player_1 == 'rock' and player_2 == 'paper':
 	print('player 2 wins')
 elif player_1 == 'rock' and player_2 == 'scissors':
