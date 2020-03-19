@@ -6,4 +6,4 @@ walks = input()
 walks = int(walks)
 
 for walk in range(walks):
-	print("I walked Yoyo today")
+	print(f"I walked Yoyo {walks} times today")
