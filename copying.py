@@ -4,6 +4,7 @@
 
 copy = input("Are we there yet? ")
 
-while copy != "stop copying me":
+while copy != "I'll let you know when":
 	print(copy)
 	copy = input()
+print("Yes, we're here!")
