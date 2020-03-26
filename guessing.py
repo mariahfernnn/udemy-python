@@ -4,6 +4,17 @@ import random
 
 random_number = random.randint(1,10) # numbers 1 - 10 (inclusive)
 
+guess = input("Guess a number between 1 and 10: ")
+guess = int(guess)
+
+while guess != random_number:
+	if guess > random_number:
+		print("TOO HIGH")
+	elif guess < random_number:
+		print("TOO LOW")
+	else:
+		print("BINGO!")
+
 # handle user guesses
 #	if they guess CORRECT, tell them they won
 #		otherwise tell them if they are TOO HIGH or TOO LOW
