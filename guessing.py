@@ -18,7 +18,7 @@ while guess != random_number:
 	# 	guess = int(input("BINGO!"))
 		# print("BINGO!")
 
-	print("BINGO! You are correct.")
+print("BINGO! You are correct.")
 
 # handle user guesses
 #	if they guess CORRECT, tell them they won
