@@ -33,12 +33,6 @@ while play != 'n':
 		else:
 			print("Thanks for playing. Bye!")
 
-
-	
-
-
-
-
 # handle user guesses
 #	if they guess CORRECT, tell them they won
 #		otherwise tell them if they are TOO HIGH or TOO LOW
