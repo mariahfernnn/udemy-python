@@ -6,40 +6,42 @@ import random
 # or if you are just using randint: 
 # from random import randint
 
-# Ask Player 1 for move
-player_1 = input("Hey Player 1! Rock, Paper, Scissors?: ").lower()
+for time in range(3):
 
-# Play against the computer using randint
-num = random.randint(0, 2)
-if num == 0:
-	computer = 'rock'
-elif num == 1:
-	computer = 'paper'
-else:
-	computer = 'scissors'
-print(f"computer plays {computer}" )
+	# Ask Player 1 for move
+	player_1 = input("Hey Player 1! Rock, Paper, Scissors?: ").lower()
 
-if player_1 == computer:
-	print("It's a tie!")
-elif player_1 == 'rock':
-	if computer == 'scissors':
-		print('player 1 wins')
-	elif computer == 'paper':
-		print('computer wins')
-elif player_1 == 'paper':
-	if computer == 'rock':
-		print('player 1 wins')
-	elif computer == 'scissors':
-		print('computer wins')
-elif player_1 == 'scissors':
-	if computer == 'paper':
-		print('player 1 wins')
-	elif computer == 'rock':
-		print('computer wins')
-else:
-	# Empty string or string does not match conditions
-	# Does not print out if player 1 enters the right input but player 2 does not
-	print("Something went wrong")
+	# Play against the computer using randint
+	num = random.randint(0, 2)
+	if num == 0:
+		computer = 'rock'
+	elif num == 1:
+		computer = 'paper'
+	else:
+		computer = 'scissors'
+	print(f"computer plays {computer}" )
+
+	if player_1 == computer:
+		print("It's a tie!")
+	elif player_1 == 'rock':
+		if computer == 'scissors':
+			print('player 1 wins')
+		elif computer == 'paper':
+			print('computer wins')
+	elif player_1 == 'paper':
+		if computer == 'rock':
+			print('player 1 wins')
+		elif computer == 'scissors':
+			print('computer wins')
+	elif player_1 == 'scissors':
+		if computer == 'paper':
+			print('player 1 wins')
+		elif computer == 'rock':
+			print('computer wins')
+	else:
+		# Empty string or string does not match conditions
+		# Does not print out if player 1 enters the right input but player 2 does not
+		print("Something went wrong")
 
 # Print a bunch of lines to prevent cheating
 # print('No cheating!')
