@@ -6,7 +6,11 @@ import random
 # or if you are just using randint: 
 # from random import randint
 
-for time in range(3):
+player_wins = 0
+computer_wins = 0
+
+while player_wins < 2 and computer_wins < 2:
+	print(f"Player Score: {player_wins} Computer Score: {computer_wins}")
 
 	# Ask Player 1 for move
 	player_1 = input("Hey Player 1! Rock, Paper, Scissors?: ").lower()
@@ -26,18 +30,24 @@ for time in range(3):
 	elif player_1 == 'rock':
 		if computer == 'scissors':
 			print('player 1 wins')
+			player_wins += 1
 		elif computer == 'paper':
 			print('computer wins')
+			computer_wins +=1
 	elif player_1 == 'paper':
 		if computer == 'rock':
 			print('player 1 wins')
+			player_wins += 1
 		elif computer == 'scissors':
 			print('computer wins')
+			computer_wins +=1
 	elif player_1 == 'scissors':
 		if computer == 'paper':
 			print('player 1 wins')
+			player_wins += 1
 		elif computer == 'rock':
 			print('computer wins')
+			computer_wins +=1
 	else:
 		# Empty string or string does not match conditions
 		# Does not print out if player 1 enters the right input but player 2 does not
